@@ -102,4 +102,10 @@
                   'cmdname': None, 
                   'cmd-action': None} 
 
+ dTRIGGER_LIST = {'os_agent_info': [{'description': 'Zabbix agent on ' 
+                                                    '{HOST.NAME} is ' 
+                                                    'unreachable ' 
+                                                    'for 15 seconds', 
+
+
 
