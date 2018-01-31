@@ -170,4 +170,7 @@
                                      'dns': "", 
                                      'ip': None, 
                                      'port': "10050"}], 
+                                'templates': [{'templateid': None}], 
+                                'groups': [{'groupid': None}]}, 
+                     'id': 4, 'auth': None} 
 
