@@ -92,4 +92,9 @@
 
 
 
+ dTRIGGER_CREATE_API = {'jsonrpc': "2.0", 
+                        'method': "trigger.create", 
+                        'templateid': None, 
+                       'auth': None, 
+                        'id': 1004} 
 
