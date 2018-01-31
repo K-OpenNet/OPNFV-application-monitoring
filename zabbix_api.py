@@ -40,6 +40,18 @@
                     'app_memory': 'proc.mem[*,root]'} 
  
 
+ dITEM_CREATE_API = {'jsonrpc': "2.0", 
+                     'method': "item.create", 
+                     'params': {'hostid': None, 
+                                'interfaceid': 'NULL', 
+                                'name': "", 
+                                'key_': "", 
+                                'type': 0, 
+                                'value_type': 3, 
+                                'delay': 1}, 
+                     'id': 1, 
+                     'auth': None} 
+  
 
 
 
