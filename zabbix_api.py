@@ -112,3 +112,7 @@
                                   'expression': '{', 'priority': 3}], 
 
 
+                  'app_memory': [{'description': 'Process Memory ' 
+                                                 'is lacking ' 
+                                                 'on {HOST.NAME}', 
+
