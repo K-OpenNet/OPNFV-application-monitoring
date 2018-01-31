@@ -119,4 +119,8 @@
                                                    'overloaded ' 
                                                    'on {HOST.NAME}', 
                                     'expression': '{', 'priority': 3}], 
+                  'os_cpu_load': [{'description': 'Processor load ' 
+                                                  'is too high ' 
+                                                  'on {HOST.NAME}', 
+                                   'expression': '{', 'priority': 3}], 
 
