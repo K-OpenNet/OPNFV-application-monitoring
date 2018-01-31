@@ -68,6 +68,10 @@
                                      'key_': str( 
                                          dITEM_KEY_VALUE['os_proc_value']), 
                                      'value_type': 3}, 
+                   'os_cpu_load': {'name': 'cpu load', 
+                                   'key_': str( 
+                                       dITEM_KEY_VALUE['os_cpu_load']), 
+                                   'value_type': 0}, 
 
 
 
