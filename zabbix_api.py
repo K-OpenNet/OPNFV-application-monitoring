@@ -98,3 +98,8 @@
                        'auth': None, 
                         'id': 1004} 
 
+ dTRIGGER_INFO = {'itemname': None, 
+                  'cmdname': None, 
+                  'cmd-action': None} 
+
+
