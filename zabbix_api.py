@@ -142,4 +142,7 @@
                                                   "{ITEM.LASTVALUE]" 
                                                   "\r\n\r\n{TRIGGER.URL}", 
                                   "filter": {"evaltype": 0, 
+                                             "conditions": [{'conditiontype': 2, 
+                                                             'operator': 0, 
+                                                             'value': None}]}, 
 
