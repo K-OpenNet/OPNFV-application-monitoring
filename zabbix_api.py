@@ -134,4 +134,10 @@
                                   'eventsource': 0, 
                                   'status': 0, 
                                   'esc_period': 120, 
+                                  'def_shortdata': "{TRIGGER.NAME}:" 
+                                                   "{TRIGGER.STATUS}", 
+                                  'def_longdata': "{TRIGGER.NAME}: " 
+                                                  "{TR`IGGER.STATUS}\r\n" 
+                                                  "Last value: " 
+                                                  "{ITEM.LASTVALUE]" 
 
