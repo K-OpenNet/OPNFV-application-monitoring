@@ -146,3 +146,10 @@
                                                              'operator': 0, 
                                                              'value': None}]}, 
 
+                                  'operations': [{'operationtype': 1, 
+                                                  'esc_period': 0, 
+                                                  'esc_step_from': 1, 
+                                                  'esc_step_to': 2, 
+                                                  'evaltype': 0, 
+
+
