@@ -84,6 +84,10 @@
                                   'key_': str( 
                                       dITEM_KEY_VALUE['app_status']), 
                                   'value_type': 3}, 
+                   'app_memory': {'name': ' service memory usage', 
+                                  'key_': str( 
+                                      dITEM_KEY_VALUE['app_memory']), 
+                                  'value_type': 3}} 
 
 
 
