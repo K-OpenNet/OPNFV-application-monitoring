@@ -51,6 +51,18 @@
                                 'delay': 1}, 
                      'id': 1, 
                      'auth': None} 
+ dITEM_KEY_COMP = {'os_agent_info': str( 
+     dITEM_KEY_VALUE['os_agent_info'] + '.nodata(15s)}=1'), 
+     'os_cpu_usage': str( 
+         dITEM_KEY_VALUE['os_cpu_usage'] + '.avg(5s)}'), 
+     'os_cpu_load': str( 
+         dITEM_KEY_VALUE['os_cpu_load'] + '.avg(5s)}'), 
+     'os_proc_value': str( 
+         dITEM_KEY_VALUE['os_proc_value'] + '.avg(5s)}'), 
+     'app_status': str( 
+         dITEM_KEY_VALUE['app_status'] + '.last(,5)}'), 
+     'app_memory': str( 
+         dITEM_KEY_VALUE['app_memory'] + '.avg(5s)}')} 
   
 
 
