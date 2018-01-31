@@ -64,6 +64,10 @@
      'app_memory': str( 
          dITEM_KEY_VALUE['app_memory'] + '.avg(5s)}')} 
   
+ dITEM_KEY_INFO = {'os_proc_value': {'name': 'process number', 
+                                     'key_': str( 
+                                         dITEM_KEY_VALUE['os_proc_value']), 
+                                     'value_type': 3}, 
 
 
 
