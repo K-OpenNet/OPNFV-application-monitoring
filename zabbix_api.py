@@ -27,5 +27,10 @@
                'and less': '<=', 
                'down': '=0'} 
  
+ dTEMPLATE_CREATE_API = {'jsonrpc': "2.0", 'method': "template.create", 
+                         'params': {'host': "", 'groups': {'groupid': 1}, 
+                                    'hosts': []}, 
+                         'id': 1004, 'auth': None} 
+  
  
 
