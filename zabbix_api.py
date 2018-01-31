@@ -72,6 +72,11 @@
                                    'key_': str( 
                                        dITEM_KEY_VALUE['os_cpu_load']), 
                                    'value_type': 0}, 
+                   'os_cpu_usage': {'name': 'cpu util usage', 
+                                    'key_': str( 
+                                        dITEM_KEY_VALUE['os_cpu_usage']), 
+                                    'value_type': 0}, 
+
 
 
 
