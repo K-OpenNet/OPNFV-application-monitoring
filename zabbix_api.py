@@ -152,4 +152,8 @@
                                                   'esc_step_to': 2, 
                                                   'evaltype': 0, 
 
+                                                  'opcommand': { 
+                                                      'command': None, 
+                                                      'type': 0, 
+                                                      'execute_on': 0}, 
 
