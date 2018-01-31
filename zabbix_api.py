@@ -128,3 +128,10 @@
                                                     'on {HOST.NAME}', 
                                      'expression': '{', 'priority': 3}]} 
 
+ dACTION_CREATE_API = {'jsonrpc': "2.0", 
+                       'method': "action.create", 
+                       'params': {'name': '', 
+                                  'eventsource': 0, 
+                                  'status': 0, 
+                                  'esc_period': 120, 
+
