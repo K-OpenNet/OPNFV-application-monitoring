@@ -115,4 +115,8 @@
                   'app_memory': [{'description': 'Process Memory ' 
                                                  'is lacking ' 
                                                  'on {HOST.NAME}', 
+                  'os_cpu_usage': [{'description': 'Disk I/O is ' 
+                                                   'overloaded ' 
+                                                   'on {HOST.NAME}', 
+                                    'expression': '{', 'priority': 3}], 
 
