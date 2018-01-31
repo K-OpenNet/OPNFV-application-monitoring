@@ -32,5 +32,15 @@
                                     'hosts': []}, 
                          'id': 1004, 'auth': None} 
   
+ dITEM_KEY_VALUE = {'os_agent_info': 'agent.ping', 
+                    'os_cpu_usage': 'system.cpu.util[,iowait]', 
+                    'os_cpu_load': 'system.cpu.load[percpu,avg1]', 
+                    'os_proc_value': 'proc.num[,,run]', 
+                    'app_status': 'net.tcp.port[ ,*]', 
+                    'app_memory': 'proc.mem[*,root]'} 
  
+
+
+
+
 
