@@ -80,6 +80,10 @@
                                      'key_': str( 
                                          dITEM_KEY_VALUE['os_agent_info']), 
                                      'value_type': 0}, 
+                   'app_status': {'name': ' service status check', 
+                                  'key_': str( 
+                                      dITEM_KEY_VALUE['app_status']), 
+                                  'value_type': 3}, 
 
 
 
