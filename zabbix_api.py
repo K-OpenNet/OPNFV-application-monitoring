@@ -160,4 +160,7 @@
                                                       {'hostid': None}] 
                                                   }]}, 
                        'auth': None, 'id': 1} 
+ dHOST_CREATE_API = {'jsonrpc': "2.0", 
+                     'method': "host.create", 
+                     'params': {'host': 'ubuntu', 
 
