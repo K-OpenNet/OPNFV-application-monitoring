@@ -163,4 +163,11 @@
  dHOST_CREATE_API = {'jsonrpc': "2.0", 
                      'method': "host.create", 
                      'params': {'host': 'ubuntu', 
+                                'interfaces': [ 
+                                    {'type': 1, 
+                                     'main': 1, 
+                                     'useip': 1, 
+                                     'dns': "", 
+                                     'ip': None, 
+                                     'port': "10050"}], 
 
