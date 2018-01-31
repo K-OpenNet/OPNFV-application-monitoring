@@ -76,6 +76,10 @@
                                     'key_': str( 
                                         dITEM_KEY_VALUE['os_cpu_usage']), 
                                     'value_type': 0}, 
+                   'os_agent_info': {'name': 'Zabbix agent status check', 
+                                     'key_': str( 
+                                         dITEM_KEY_VALUE['os_agent_info']), 
+                                     'value_type': 0}, 
 
 
 
