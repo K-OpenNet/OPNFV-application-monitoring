@@ -123,4 +123,8 @@
                                                   'is too high ' 
                                                   'on {HOST.NAME}', 
                                    'expression': '{', 'priority': 3}], 
+                  'os_proc_value': [{'description': 'Too many ' 
+                                                    'processes running ' 
+                                                    'on {HOST.NAME}', 
+                                     'expression': '{', 'priority': 3}]} 
 
