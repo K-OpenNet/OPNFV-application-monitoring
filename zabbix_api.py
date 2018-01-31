@@ -106,6 +106,9 @@
                                                     '{HOST.NAME} is ' 
                                                     'unreachable ' 
                                                     'for 15 seconds', 
-
+                                     'expression': '{', 'priority': 3}], 
+                  'app_status': [{'description': 'Service is down ' 
+                                                 'on {HOST.NAME}', 
+                                  'expression': '{', 'priority': 3}], 
 
 
