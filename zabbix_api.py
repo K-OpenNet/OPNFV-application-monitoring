@@ -156,4 +156,8 @@
                                                       'command': None, 
                                                       'type': 0, 
                                                       'execute_on': 0}, 
+                                                  'opcommand_hst': [ 
+                                                      {'hostid': None}] 
+                                                  }]}, 
+                       'auth': None, 'id': 1} 
 
