@@ -140,4 +140,6 @@
                                                   "{TR`IGGER.STATUS}\r\n" 
                                                   "Last value: " 
                                                   "{ITEM.LASTVALUE]" 
+                                                  "\r\n\r\n{TRIGGER.URL}", 
+                                  "filter": {"evaltype": 0, 
 
