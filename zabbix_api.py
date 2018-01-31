@@ -21,4 +21,11 @@
                          'password': None}, 
               'id': 1, 
               'auth': None} 
+ COMP_VALUE = {'greater': '>', 
+               'less': '<', 
+               'and greater': '>=', 
+               'and less': '<=', 
+               'down': '=0'} 
+ 
+ 
 
