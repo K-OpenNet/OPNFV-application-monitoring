@@ -188,5 +188,12 @@
               'ssh_username': None, 
               'ssh_password': None} 
   
+ dZBX_INFO = {'zabbix_user': None, 
+              'zabbix_pass': None, 
+              'zabbix_ip': None, 
+              'zabbix_port': None, 
+              'zabbix_token': None 
+              } 
+  
 
 
