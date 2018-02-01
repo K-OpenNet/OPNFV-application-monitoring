@@ -199,5 +199,16 @@
                  'action': None, 
                  'trigger_id': None, 
                  'cmd-action': None} 
+ dVDU_INFO = {'template_id': None, 
+              'template_name': None, 
+              'hostid': None, 
+              'group_id': None, 
+             'mgmt_ip': None, 
+             'vdu_id': None, 
+              'parameters': None, 
+              'actioninfo': [], 
+              'appinfo': None, 
+              'zbx_info': None 
+              } 
 
 
