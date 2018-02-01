@@ -79,4 +79,9 @@
          :returns: url of vnf to monitor 
          """ 
          pass 
+     def send_post(self, query): 
+         response = requests.post(self.URL, headers=zapi.HEADERS, 
+                                  data=json.dumps(query)) 
+         return dict(response.json()) 
+  
 
