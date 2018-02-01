@@ -177,4 +177,10 @@
                    'params': {'output': 'extend', 
                               'filter': {'name': ["Zabbix servers", ]}}, 
                    'id': 1, 'auth': None} 
+ dGRAPH_CREATE_API = {'jsonrpc': '2.0', 'method': 'graph.create', 
+                      'params': {'name': None, 
+                                 'width': 900, 
+                                 'height': 200, 
+                                 'gitems': []}, 
+                      'auth': None, 'id': 1004} 
 
