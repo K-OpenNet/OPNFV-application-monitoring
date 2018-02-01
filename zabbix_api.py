@@ -173,4 +173,8 @@
                                 'templates': [{'templateid': None}], 
                                 'groups': [{'groupid': None}]}, 
                      'id': 4, 'auth': None} 
+ dGROUP_GET_API = {'jsonrpc': "2.0", 'method': "hostgroup.get", 
+                   'params': {'output': 'extend', 
+                              'filter': {'name': ["Zabbix servers", ]}}, 
+                   'id': 1, 'auth': None} 
 
