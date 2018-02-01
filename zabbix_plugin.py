@@ -69,4 +69,6 @@
          """ 
          return {} 
 
+     def monitor_url(self, plugin, context, vnf): 
+         """Return the url of vnf to monitor. 
 
