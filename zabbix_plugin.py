@@ -29,3 +29,19 @@
 
  LOG = logging.getLogger(__name__) 
 
+
+ 
+ class VNFMonitorZabbix(abstract_driver.VNFMonitorAbstractDriver): 
+     params = ['application', 'OS'] 
+ 
+ 
+     def __init__(self): 
+         self.kwargs = None 
+         self.vnf = None 
+         self.vduname = [] 
+         self.URL = None 
+         self.hostinfo = {} 
+         self.tenant_id = None 
+ 
+ 
+
