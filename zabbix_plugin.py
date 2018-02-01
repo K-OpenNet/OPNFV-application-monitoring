@@ -42,6 +42,10 @@
          self.URL = None 
          self.hostinfo = {} 
          self.tenant_id = None 
+     def get_type(self): 
+         """Return one of predefined type of the hosting vnf drivers.""" 
+         plugin_type = 'zabbix' 
+         return plugin_type 
  
  
 
