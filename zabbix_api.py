@@ -183,4 +183,10 @@
                                  'height': 200, 
                                  'gitems': []}, 
                       'auth': None, 'id': 1004} 
+ dAPP_INFO = {'app_port': None, 
+              'app_name': None, 
+              'ssh_username': None, 
+              'ssh_password': None} 
+  
+
 
