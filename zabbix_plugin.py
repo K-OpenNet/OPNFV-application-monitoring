@@ -47,5 +47,9 @@
          plugin_type = 'zabbix' 
          return plugin_type 
  
- 
+      def get_name(self): 
+         """Return a symbolic name for the VNF Monitor plugin.""" 
+         plugin_name = 'zabbix' 
+         return plugin_name 
+
 
