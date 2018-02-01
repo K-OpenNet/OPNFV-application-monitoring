@@ -71,4 +71,12 @@
 
      def monitor_url(self, plugin, context, vnf): 
          """Return the url of vnf to monitor. 
+  
+         :param plugin: 
+         :param context: 
+         :param vnf: 
+         :returns: string 
+         :returns: url of vnf to monitor 
+         """ 
+         pass 
 
