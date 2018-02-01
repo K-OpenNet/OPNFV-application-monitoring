@@ -52,4 +52,9 @@
          plugin_name = 'zabbix' 
          return plugin_name 
 
+     def get_description(self): 
+         """Return description of VNF Monitor plugin.""" 
+         plugin_descript = 'Tacker VNFMonitor Zabbix Driver' 
+         return plugin_descript 
+  
 
