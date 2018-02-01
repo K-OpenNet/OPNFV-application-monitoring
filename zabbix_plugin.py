@@ -56,5 +56,17 @@
          """Return description of VNF Monitor plugin.""" 
          plugin_descript = 'Tacker VNFMonitor Zabbix Driver' 
          return plugin_descript 
+     def monitor_get_config(self, plugin, context, vnf): 
+ 
+ 
+         """Return dict of monitor configuration data. 
   
+         :param plugin: 
+         :param context: 
+         :param vnf: 
+         :returns: dict 
+         :returns: dict of monitor configuration data 
+         """ 
+         return {} 
+
 
