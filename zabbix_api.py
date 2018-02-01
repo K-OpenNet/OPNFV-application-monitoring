@@ -195,5 +195,9 @@
               'zabbix_token': None 
               } 
   
+ dACTION_LIST = {'item': None, 
+                 'action': None, 
+                 'trigger_id': None, 
+                 'cmd-action': None} 
 
 
