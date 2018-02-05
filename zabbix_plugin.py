@@ -266,4 +266,15 @@
              if len(trigger_params) != 0: 
                  self.create_trigger(trigger_params, vdu) 
                  del trigger_params[:] 
+     def create_item(self): 
+         # Create _ITEM 
+         for vdu in self.vduname: 
+             temp_item_api = copy.deepcopy(zapi.dITEM_CREATE_API) 
+             temp_item_api['auth'] = \ 
+                 self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
+             self.hostinfo[vdu]['appinfo'] = \ 
+                 copy.deepcopy(zapi.dAPP_INFO) 
+             temp_app = self.hostinfo[vdu]['parameters']['application'] 
+             temp_item_api['params']['hostid'] = \ 
+                 self.hostinfo[vdu]['template_id'][0] 
 
