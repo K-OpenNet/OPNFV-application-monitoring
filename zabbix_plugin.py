@@ -154,4 +154,7 @@
                  self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
              temp_group_api['auth'] = \ 
                  self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
+             response = self.send_post(temp_group_api) 
+             gid = response['result'][0]['groupid'] 
+             temp_host_api['params']['host'] = str(vdu) 
 
