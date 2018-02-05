@@ -108,4 +108,15 @@
                  self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
              tempname_api = temp_action_api['params']['operations'][0] 
              temp_filter = temp_action_api['params']['filter'] 
+             for info in (self.hostinfo[vdu]['actioninfo']): 
+                 tempname_api['opcommand_hst'][0]['hostid'] = \ 
+                     self.hostinfo[vdu]['hostid'] 
+                 now = time.localtime() 
+                 rtime = str(now.tm_hour) + str(now.tm_min) + str(now.tm_sec) 
+                 temp_name = "Trigger Action " + \ 
+                             str( 
+                                 vdu + rtime + " " + 
+                                 info['item'] + " " + info['action'] 
+                             ) 
+                 temp_action_api['params']['name'] = temp_name 
 
