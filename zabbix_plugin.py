@@ -205,4 +205,8 @@
                      action_list = copy.deepcopy(zapi.dACTION_LIST) 
                      temp_item = self.hostinfo[vdu]['parameters'][para][item] 
 
+                     if ('app_name' != item)\ 
+                             and ('app_port' != item) \ 
+                             and ('ssh_username' != item) \ 
+                             and ('ssh_password' != item): 
 
