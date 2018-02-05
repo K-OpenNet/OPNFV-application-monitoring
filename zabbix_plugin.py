@@ -213,4 +213,16 @@
                                  in temp_item.keys(): 
                              temp_con = temp_item['condition'] 
   
+                         if len(temp_con) == 2: 
+                             temp_comparrision = temp_con[0] 
+                             temp_comparrision_value = temp_con[1] 
+                             temp_trigger_list[item][0]['expression'] += \ 
+                                 self.hostinfo[vdu]['template_name'] + ':'\ 
+                                 + str( 
+                                     zapi.dITEM_KEY_COMP[item].replace( 
+                                         '*', str(temp_vdu_name))) \ 
+                                 + str( 
+                                     zapi.COMP_VALUE[temp_comparrision]) \ 
+                                 + str( 
+                                     temp_comparrision_value) 
 
