@@ -178,3 +178,8 @@
                  response = self.send_post(temp_host_api) 
              self.hostinfo[vdu]['hostid'] = response['result']['hostids'][0] 
 
+     def create_trigger(self, trigger_params, vduname): 
+         temp_trigger_api = copy.deepcopy(zapi.dTRIGGER_CREATE_API) 
+         temp_trigger_api['auth'] = \ 
+            self.hostinfo[vduname]['zbx_info']['zabbix_token'] 
+
