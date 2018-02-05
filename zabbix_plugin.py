@@ -253,4 +253,13 @@
                              if 'cmd' == \ 
                                      temp_item['actionname']: 
   
+                                 action_list['cmd-action'] = \ 
+                                     temp_item['cmd-action'] 
+                             self.hostinfo[vdu]['actioninfo'].append( 
+                                 action_list) 
+ 
+ 
+                         else: 
+                             trigger_params.append( 
+                                 temp_trigger_list[item][0]) 
 
