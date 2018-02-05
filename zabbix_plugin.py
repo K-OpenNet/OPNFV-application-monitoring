@@ -132,4 +132,9 @@
                      tempname_api['opcommand']['authtype'] = 0 
                      tempname_api['opcommand']['username'] = \ 
                          self.hostinfo[vdu]['appinfo']['ssh_username'] 
+                     tempname_api['opcommand']['password'] = \ 
+                         self.hostinfo[vdu]['appinfo']['ssh_password'] 
+                     tempname_api['opcommand']['type'] = 2 
+                     tempname_api['opcommand']['command'] = info['cmd-action'] 
+                     tempname_api['opcommand']['port'] = 22 
 
