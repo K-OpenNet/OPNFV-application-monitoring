@@ -182,4 +182,8 @@
          temp_trigger_api = copy.deepcopy(zapi.dTRIGGER_CREATE_API) 
          temp_trigger_api['auth'] = \ 
             self.hostinfo[vduname]['zbx_info']['zabbix_token'] 
+         temp_trigger_api['params'] = trigger_params 
+         temp_trigger_api['templateid'] = \ 
+             str( 
+                 self.hostinfo[vduname]['template_id'][0]) 
 
