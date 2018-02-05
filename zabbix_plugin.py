@@ -263,3 +263,7 @@
                              trigger_params.append( 
                                  temp_trigger_list[item][0]) 
 
+             if len(trigger_params) != 0: 
+                 self.create_trigger(trigger_params, vdu) 
+                 del trigger_params[:] 
+
