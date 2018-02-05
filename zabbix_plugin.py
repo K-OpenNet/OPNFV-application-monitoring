@@ -171,4 +171,10 @@
                      self.hostinfo[vdu]['template_id'][0] 
                  temp_host_api['params']['groups'][0]['groupid'] = gid 
                  response = self.send_post(temp_host_api) 
+             if 'error' in response: 
+                 now = time.localtime() 
+                 rtime = str(now.tm_hour) + str(now.tm_min) + str(now.tm_sec) 
+                 temp_host_api['params']['host'] = str(vdu) + rtime 
+                 response = self.send_post(temp_host_api) 
+             self.hostinfo[vdu]['hostid'] = response['result']['hostids'][0] 
 
