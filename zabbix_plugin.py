@@ -242,4 +242,15 @@
                                          zapi.COMP_VALUE[temp_comparrision]) 
                          if 'actionname' in \ 
                                  temp_item.keys(): 
+                             trig_act_pa.append(temp_trigger_list[item][0]) 
+                             response = self.create_trigger(trig_act_pa, vdu) 
+                             del trig_act_pa[:] 
+                             action_list['action'] = \ 
+                                 temp_item['actionname'] 
+                             action_list['trigger_id'] = \ 
+                                 response['triggerids'][0] 
+                             action_list['item'] = item 
+                             if 'cmd' == \ 
+                                     temp_item['actionname']: 
+  
 
