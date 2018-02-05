@@ -84,4 +84,11 @@
                                   data=json.dumps(query)) 
          return dict(response.json()) 
   
+     @staticmethod 
+     def check_error(response): 
+         try: 
+             if 'result' not in response: 
+                 raise ValueError 
+         except ValueError: 
+             LOG.error('Cannot request error : %s', response['error']['data']) 
 
