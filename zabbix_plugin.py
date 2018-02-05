@@ -137,4 +137,9 @@
                      tempname_api['opcommand']['type'] = 2 
                      tempname_api['opcommand']['command'] = info['cmd-action'] 
                      tempname_api['opcommand']['port'] = 22 
+                     temp_filter['conditions'][0]['value'] = info['trigger_id'] 
+                     response = self.send_post(temp_action_api) 
+                     VNFMonitorZabbix.check_error(response) 
+                     continue 
+
 
