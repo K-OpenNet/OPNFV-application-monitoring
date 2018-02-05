@@ -157,4 +157,11 @@
              response = self.send_post(temp_group_api) 
              gid = response['result'][0]['groupid'] 
              temp_host_api['params']['host'] = str(vdu) 
+             if type(self.hostinfo[vdu]['mgmt_ip']) is list: 
+                 for vduip in (self.hostinfo[vdu]['mgmt_ip']): 
+                     temp_host_api['params']['interfaces'][0]['ip'] = vduip 
+                     temp_host_api['params']['templates'][0]['templateid'] = \ 
+                         self.hostinfo[vdu]['template_id'][0] 
+                     temp_host_api['params']['groups'][0]['groupid'] = gid 
+                     response = self.send_post(temp_host_api) 
 
