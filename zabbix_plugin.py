@@ -232,3 +232,14 @@
                                      self.hostinfo[vdu]['template_name'] + ':' \ 
                                      + str(zapi.dITEM_KEY_COMP[item]) 
 
+                             else: 
+                                 temp_trigger_list[item][0]['expression'] += \ 
+                                     self.hostinfo[vdu]['template_name'] + ':' \ 
+                                     + str( 
+                                         zapi.dITEM_KEY_COMP[item].replace( 
+                                             '*', str(temp_vdu_port))) \ 
+                                     + str( 
+                                         zapi.COMP_VALUE[temp_comparrision]) 
+                         if 'actionname' in \ 
+                                 temp_item.keys(): 
+
