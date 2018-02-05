@@ -195,4 +195,9 @@
          trig_act_pa = [] 
 
 
+         for vdu in self.vduname: 
+             temp_trigger_list = copy.deepcopy(zapi.dTRIGGER_LIST) 
+
+             temp_vdu_name = self.hostinfo[vdu]['appinfo']['app_name'] 
+             temp_vdu_port = self.hostinfo[vdu]['appinfo']['app_port'] 
 
