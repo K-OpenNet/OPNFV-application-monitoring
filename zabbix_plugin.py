@@ -125,10 +125,11 @@
  
                      tempname_api['opcommand']['command'] = info['cmd-action'] 
   
-                 if (info['action'] == 'cmd') and \ 
-                         (info['item'] != 'os_agent_info'): 
+                 elif (info['item'] == 'os_agent_info') \ 
+                         and (info['action'] == 'cmd'): 
  
  
-                     tempname_api['opcommand']['command'] = info['cmd-action'] 
-  
+                     tempname_api['opcommand']['authtype'] = 0 
+                     tempname_api['opcommand']['username'] = \ 
+                         self.hostinfo[vdu]['appinfo']['ssh_username'] 
 
