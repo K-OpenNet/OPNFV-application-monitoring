@@ -164,4 +164,11 @@
                          self.hostinfo[vdu]['template_id'][0] 
                      temp_host_api['params']['groups'][0]['groupid'] = gid 
                      response = self.send_post(temp_host_api) 
+             else: 
+                 temp_host_api['params']['interfaces'][0]['ip'] = \ 
+                     self.hostinfo[vdu]['mgmt_ip'] 
+                 temp_host_api['params']['templates'][0]['templateid'] = \ 
+                     self.hostinfo[vdu]['template_id'][0] 
+                 temp_host_api['params']['groups'][0]['groupid'] = gid 
+                 response = self.send_post(temp_host_api) 
 
