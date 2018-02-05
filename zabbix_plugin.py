@@ -189,5 +189,10 @@
          response = self.send_post(temp_trigger_api) 
          VNFMonitorZabbix.check_error(response) 
          return response['result'] 
+     def _create_trigger(self): 
+ 
+         trigger_params = [] 
+         trig_act_pa = [] 
+
 
 
