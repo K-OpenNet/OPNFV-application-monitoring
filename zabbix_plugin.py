@@ -200,4 +200,9 @@
 
              temp_vdu_name = self.hostinfo[vdu]['appinfo']['app_name'] 
              temp_vdu_port = self.hostinfo[vdu]['appinfo']['app_port'] 
+             for para in VNFMonitorZabbix.params: 
+                 for item in self.hostinfo[vdu]['parameters'][para].keys(): 
+                     action_list = copy.deepcopy(zapi.dACTION_LIST) 
+                     temp_item = self.hostinfo[vdu]['parameters'][para][item] 
+
 
