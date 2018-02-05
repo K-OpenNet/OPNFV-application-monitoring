@@ -225,4 +225,10 @@
                                      zapi.COMP_VALUE[temp_comparrision]) \ 
                                  + str( 
                                      temp_comparrision_value) 
+                         else: 
+                             temp_comparrision = temp_con[0] 
+                             if 'os_agent_info' == item: 
+                                 temp_trigger_list[item][0]['expression'] += \ 
+                                     self.hostinfo[vdu]['template_name'] + ':' \ 
+                                     + str(zapi.dITEM_KEY_COMP[item]) 
 
