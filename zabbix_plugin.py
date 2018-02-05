@@ -142,4 +142,8 @@
                      VNFMonitorZabbix.check_error(response) 
                      continue 
 
+                 temp_filter['conditions'][0]['value'] = info['trigger_id'] 
+                 response = self.send_post(temp_action_api) 
+                 VNFMonitorZabbix.check_error(response) 
+  
 
