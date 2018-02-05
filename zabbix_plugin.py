@@ -119,4 +119,10 @@
                                  info['item'] + " " + info['action'] 
                              ) 
                  temp_action_api['params']['name'] = temp_name 
+                 if (info['action'] == 'cmd') and \ 
+                         (info['item'] != 'os_agent_info'): 
+ 
+ 
+                     tempname_api['opcommand']['command'] = info['cmd-action'] 
+  
 
