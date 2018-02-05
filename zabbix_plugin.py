@@ -209,4 +209,8 @@
                              and ('app_port' != item) \ 
                              and ('ssh_username' != item) \ 
                              and ('ssh_password' != item): 
+                         if 'condition' \ 
+                                 in temp_item.keys(): 
+                             temp_con = temp_item['condition'] 
+  
 
