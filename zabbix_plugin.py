@@ -146,4 +146,12 @@
                  response = self.send_post(temp_action_api) 
                  VNFMonitorZabbix.check_error(response) 
   
+     def create_vdu_host(self): 
+         for vdu in self.vduname: 
+             temp_host_api = zapi.dHOST_CREATE_API 
+             temp_group_api = zapi.dGROUP_GET_API 
+             temp_host_api['auth'] = \ 
+                 self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
+             temp_group_api['auth'] = \ 
+                 self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
 
