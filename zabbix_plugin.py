@@ -186,4 +186,8 @@
          temp_trigger_api['templateid'] = \ 
              str( 
                  self.hostinfo[vduname]['template_id'][0]) 
+         response = self.send_post(temp_trigger_api) 
+         VNFMonitorZabbix.check_error(response) 
+         return response['result'] 
+
 
