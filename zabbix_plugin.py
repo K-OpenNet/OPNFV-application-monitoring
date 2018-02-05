@@ -101,4 +101,11 @@
              temp_graph_api['params']['name'] = name 
              response = self.send_post(temp_graph_api) 
              VNFMonitorZabbix.check_error(response) 
+     def create_action(self): 
+         for vdu in self.vduname: 
+             temp_action_api = copy.deepcopy(zapi.dACTION_CREATE_API) 
+             temp_action_api['auth'] = \ 
+                 self.hostinfo[vdu]['zbx_info']['zabbix_token'] 
+             tempname_api = temp_action_api['params']['operations'][0] 
+             temp_filter = temp_action_api['params']['filter'] 
 
